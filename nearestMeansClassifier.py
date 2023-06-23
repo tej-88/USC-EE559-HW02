@@ -23,7 +23,7 @@ class NearestMeansClassifier():
         self.features_idx = features_idx
         D = len(features_idx)
         self.means = np.empty((self.C, D))
-
+        self.means_prime = np.empty((self.C, D))
         total_sum = np.zeros((self.C, D))
         N = np.zeros((self.C, ))
 
